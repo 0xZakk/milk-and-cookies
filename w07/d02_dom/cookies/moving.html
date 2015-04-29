@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This</title>
+    <style>
+      *
+      {
+        position:relative;
+      }
+    </style>
+    <script>
+      function addEvents(){
+        var input = document.getElementById("input");
+        input.addEventListener("keyup", function(){
+          document.getElementById("charCount").innerText = input.value.length;
+        });
+      }
+
+    function move(which){
+      var currentLeft   = parseInt(which.style.left);
+      var changeAmount  = 50;
+      var newLeft       = currentLeft + changeAmount;
+      if(isNaN(currentLeft)){
+        newLeft = changeAmount;
+      }
+      which.style.left = newLeft + "px"; 
+    }
+  </script>
+</head>
+<body onload="addEvents()">
+  <div>
+    <img src="https://avatars3.githubusercontent.com/u/6268177?v=3&s=460" id="robz" alt="My shining face" />
+  </div>
+
+  <input id="input" type="text" />
+  <p id="charCount"></p>
+
+  <button type="button" id="myButton" >Move!</button>
+</body>
+</html>
