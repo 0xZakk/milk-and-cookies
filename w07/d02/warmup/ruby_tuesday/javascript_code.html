@@ -17,24 +17,46 @@
   // Comments with //
 
   // Variables
-
+  var beep = "beep"
 
   // Conditionals
   var number = 10
   // If number is less than 5 return "Too Small"
-  // If number equals 10 return "Just Right"
-  // If number is greater than 10 return "Too Big"
+  // If number equals 5 return "Just Right"
+  // If number is greater than 5 return "Too Big”
+  if (number < 5) {
+    console.log("Too Small");
+  } else if (number = 5) {
+    console.log("Just Right");
+  } else if (number > 5) {
+    console.log("Too Big");
+  };
 
   // Case/Switch Statements
     // Look Up "Switch"
   var day = 'Tuesday';
   // Make it do what the ruby does.
-
+  switch (day) {
+    case "Monday":
+      console.log("Happy coffee");
+      break
+    case "Tuesday":
+      console.log("How was that coffee?");
+      break
+    case "Friday":
+      console.log("I am in love");
+      break
+    default:
+      console.log("This day does not count");
+  }
 
   // While Loop
   var count = 10;
   // Make it do what the ruby does.
-
+  while (count > 0) {
+    console.log(count);
+    count--;
+  }
 
   ///////////////////////
 
@@ -42,23 +64,48 @@
 
   // named
   // Create a function named "add" that will add two passed numbers
+  function add(x, y) {
+    return x + y;
+  }
+
+  console.log(add(1, 2));
 
   // anonymous
   // Create an anonymous function that will multiply two numbers and then set the value returned from that to a variable called multiplied.
+  function annonymous(x, y) {
+    multiplied = x * y;
+    return multiplied;
+  }
+  console.log(annonymous(2, 2));
 
 
   // Arrays
   var myNameArray  = ['Adam', 'Elaine', 'Tom'];
   // Return the first element of the array
+  console.log(myNameArray[0]);
   // Add a new value 'Matt' to the array
+  myNameArray.push("Matt");
+  console.log(myNameArray);
 
   // Iteration
   var dwarves = ['Doc', 'Grumpy', 'Happy', 'Sleepy', 'Bashful', 'Sneezy', 'Dopey'];
   // Print out to the console, "Hi Ho! I am" + the dwarfs name
+  for (var i = 0; i < dwarves.length; i++) {
+    console.log("Hi Ho! I am " + dwarves[i])
+  };
 
   // Use the forEach method to iterate over the array and return:
     // dwarf name + "is part of the gang." using both the index and specific value in the array (LOOK UP forEach)!!!
+    
+    // function printDwarf(element, index) {
+    //   console.log(index + ". " + element + " is part of the gang.");
+    // }
 
+    // dwarves.forEach(printDwarf);
+
+    dwarves.forEach(function(dwarf, index) {
+      console.log(index + ". Hi Ho! I am " + dwarf);
+    })
 
   ///////////////////
 
@@ -66,12 +113,39 @@
   // Example:
   var myObject = {name: 'Snow White', age: 20, weakness: 'apples'};
   // Print out myObjects name using both bracket and dot notation.
+  console.log(myObject.name);
+  console.log(myObject["name"]);
 
   // Create a new object called myBird with a name of your choice that can:
     // chirp, which will return 'tweet tweet tweet'
     // fly, which will return 'I am like a bird.  I want to fly away.  I dont know where my home is. I dont know where my soul is.'
     // greet, which will return ('Hi my name is' + name)
         // HINT: Look up what the keyword 'this' does in JavaScript
+    var myBird = {
+      name: "Zakk",
+      chirp: function() {
+        console.log("TWEET TWEET TWEET");
+      },
+      fly: birdFly(),
+      greet: birdGreet()};
+
+    function birdChirp () {
+      console.log("tweet tweet tweet");
+    }
+
+    function birdFly () {
+      console.log('I am like a bird.  I want to fly away.  I dont know where my home is. I dont know where my soul is.');
+    }
+
+    function birdGreet () {
+      console.log("Hi my name is " + this.name);
+    }
+
+    console.log(myBird.name);
+    myBird.chirp();
+    myBird.fly;
+    myBird.greet;
+
 
 </script>
 </body>
