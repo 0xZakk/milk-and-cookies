@@ -59,7 +59,7 @@ var deck = [{
 There is still a lot of repetition in our object code. We'll see how to take care of this in a moment. But, for now, notice how our comparison code is much simpler:
 
 ```js
-deck[0],beat(deck[1]) ? "Player 1 wins!" : "Player 2 wins!"
+deck[0].beat(deck[1]) ? "Player 1 wins!" : "Player 2 wins!";
 ```
 
 The reason this is simpler is easy: we've encapsulated the comparison logic in the card object itself, as well as each card's numerical value.
