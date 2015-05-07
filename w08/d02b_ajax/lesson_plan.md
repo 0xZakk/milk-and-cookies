@@ -5,9 +5,9 @@
 - Explain why synchronous program execution is not conducive to the front-end.
 - Use jQuery $.ajax() method to make asynchronous GET requests for data.
 - Use jQuery's 'promise-like' methods to handle AJAX responses asynchronously.
-- Contrast the old ('success') style of handling async with the new style.
 - Render new HTML content using data loaded from an Ajax request.
 - Perform POST, PUT, and DELETE requests to an API to modify data.
+- integrate $.ajax into an OOJS solution for an application
 
 
 ## Opening Framing(5m)
@@ -17,14 +17,14 @@ We've been floating around this concept of synchronous vs asynchronus program ex
 Turn and talk to you neighbor, why might synchronus programming not be effective for the front end? Consider how http requests work with regard to front end functionality.
 
 
-We don't want to sit around and wait for code to execute before we we load the rest of our script. It would be really nice if we could just describe what we want to happen when the code finally does execute, in a callback.
+We don't want to sit around and wait for code to execute before we load the rest of our script. It would be really nice if we could just describe what we want to happen when the code finally does execute, in a callback.
 
 ## Getting JSON response using `$.ajax()` (15 m)
 For the first part of this lesson, we'll be using the (weather underground api)[http://www.wunderground.com/weather/api/d/docs]!
 
 So if we go to this link, and we go to the example in the middle of the page, we can see a url, something like `http://api.wunderground.com/api/Your_Key/conditions/q/CA/San_Francisco.json`
 
-You guys can signup and register for your very own key! For now, let's just use mine 
+You guys can signup and register for your very own key! For now, let's just use mine
 
 Milk: `http://api.wunderground.com/api/f28a93cae85945b6/conditions/q/CA/San_Francisco.json`
 Cookies: `http://api.wunderground.com/api/6ca0e2b375930c22/conditions/q/CA/San_Francisco.json`
@@ -38,6 +38,11 @@ Turns out we can access this json object using JS!
 
 ## ENTER `$.ajax` (30 m) I do
 The jquery library gives us access to this awesome thing called asynchronous json and xml(AJAX)
+- with AJAX we can do HTTP requests:
+  - get
+  - post
+  - delete
+  - put
 
 Go ahead and go to the starter code located in the milk and cookies repo(w08/d02_ajax/exercises/ajax_weather_underground)
 
