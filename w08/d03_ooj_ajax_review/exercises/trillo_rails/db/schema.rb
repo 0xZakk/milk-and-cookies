@@ -17,8 +17,8 @@ ActiveRecord::Schema.define(version: 20140727034052) do
   enable_extension "plpgsql"
 
   create_table "cards", force: :cascade do |t|
-    t.string   "description", limit: 255
-    t.boolean  "completed",               default: false
+    t.string   "description"
+    t.boolean  "completed",   default: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
