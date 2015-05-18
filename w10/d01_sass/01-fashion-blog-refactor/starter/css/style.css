@@ -84,23 +84,20 @@ aside {
 
 article {
   padding: 2em 0; }
-
-article time {
-  font-size: 2em;
-  color: #ccc; }
-
-article h3 {
-  margin: 0 0 .5em 0;
-  font-weight: 300;
-  font-size: 1.75em;
-  color: #333; }
-
-article p:first-letter {
-  font-size: 5em;
-  float: left;
-  line-height: 1;
-  padding-right: .25em;
-  color: #aaa; }
+  article time {
+    font-size: 2em;
+    color: #ccc; }
+  article h3 {
+    margin: 0 0 .5em 0;
+    font-weight: 300;
+    font-size: 1.75em;
+    color: #333; }
+  article p:first-letter {
+    font-size: 5em;
+    float: left;
+    line-height: 1;
+    padding-right: .25em;
+    color: #aaa; }
 
 .read-more {
   font-weight: 400;
