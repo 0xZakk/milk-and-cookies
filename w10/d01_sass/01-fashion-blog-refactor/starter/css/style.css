@@ -113,25 +113,20 @@ article p:first-letter {
 
 footer {
   clear: both; }
-
-footer nav {
-  margin-bottom: 1.5em; }
-
-footer nav li a {
-  display: block;
-  padding: 0 1em;
-  position: relative; }
-
-footer nav li a:after {
-  content: '|';
-  color: #ccc;
-  position: absolute;
-  right: 0; }
-
-footer nav li:last-child a:after {
-  display: none; }
-
-footer nav li:first-child a {
-  padding-left: 0; }
+  footer nav {
+    margin-bottom: 1.5em; }
+    footer nav li a {
+      display: block;
+      padding: 0 1em;
+      position: relative; }
+      footer nav li a:after {
+        content: '|';
+        color: #ccc;
+        position: absolute;
+        right: 0; }
+    footer nav li:last-child a:after {
+      display: none; }
+    footer nav li:first-child a {
+      padding-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
