@@ -35,14 +35,14 @@ header {
     text-decoration: underline;
   }
 
-  & h1, & h2 {
+  h1, h2 {
     display: inline-block;
     font-weight: 300;
     margin-top: 2em;
     margin-bottom: .25em;     
   }
 
-  & h2 {
+  h2 {
     color: #aaa;
     font-size: 1.25em;
     margin-left: 1em;     
