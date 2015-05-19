@@ -1,9 +1,12 @@
 var express = require("express");
 var app = express();
 
+app.set("view engine", "hbs");
+
 app.get("/", function(req, res) {
-  res.send("99 bottles of beer on the wall <a href='/98'>Take one down, pass it around</a>");
+  res.render('index');
 });
+
 
 app.get("/0", function(req, res){
   res.send("Oh no! 0 bottles of beer on the wall! :( <a href='/99'>Start over?</a>");
