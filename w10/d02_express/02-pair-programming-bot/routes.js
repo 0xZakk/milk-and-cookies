@@ -18,7 +18,6 @@
 
 
 
-
 module.exports = {
   index: function(req, res) {
     res.render('index'); // Do you have a test? Y / N

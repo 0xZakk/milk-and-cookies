@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express = require("express");
 var app = express();
 
@@ -19,6 +20,15 @@ app.get("/:numBottles", function( req, res ){
     next: next
   });
 });
+=======
+var express = require("express")
+var app = express()
+var routes = require("./routes")
+
+app.set("view engine", "hbs")
+app.use(express.static(__dirname + "/public"))
+app.get("/:numBottles?", routes.index )
+>>>>>>> 6011b67c7a6f98653b7eae7ba3914dc527a1a359
 
 app.listen(3000, function(){
   console.log("listening on 3000");
