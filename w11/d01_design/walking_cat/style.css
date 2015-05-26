@@ -3,7 +3,22 @@
   height: 300px;
   position: absolute;
   bottom: -20px;
+  animation: walk 5s;
 }
+
+@keyframes walk
+{
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 10%;
+  }
+}
+
 html, body
 {
   margin:0;
@@ -13,6 +28,7 @@ html, body
   height:100%;
   overflow:hidden;
 }
+
 body {
   background-image: url('dolphin.jpg');
   background-size: cover;

@@ -3,6 +3,8 @@
 <head>
   <title>Art</title>
   <link rel='stylesheet' type='text/css' href='css/styles.css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="node_modules/isotope-layout/js/isotope.js"></script>
 </head>
 <body>
   <div class='portfolio'>
@@ -51,4 +53,17 @@
     </div>
   </div>
 </body>
+
+<script>
+$('.paintings').isotope({
+  itemSelector: '.painting',
+  layoutMode: '.fitRows'
+})
+
+$('a').on('click', function(){
+  console.log(this.innerHTML);
+})
+
+</script>
+
 </html>
